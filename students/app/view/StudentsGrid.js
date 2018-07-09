@@ -25,8 +25,8 @@ Ext.define('StudentsListApp.view.StudentsGrid' ,{
           {header: 'Возраст',  dataIndex: 'age',  flex: 1},
           {header: 'Группа', dataIndex: 'group', flex: 1, filterable: true, 
            filter: { 
-                 type: 'string', 
-                 itemDefaults: { } 
+                 type: 'list', 
+                 /*store: 'GroupStore',*/
                 },
           },
           {header: 'Id группы', dataIndex: 'id_group', flex: 0, hidden: true},
